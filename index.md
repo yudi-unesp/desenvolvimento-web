@@ -28,7 +28,7 @@
 <li>Aplicar os conhecimentos de CSS aprendidos na aula nos projetos da aula anterior.</li>
 </ul>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Entreguei os mesmos trabalho da aula anterior, sem alterações, pois eu há havia utilizado CSS nos arquivos.<br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;Entreguei os mesmos trabalhos da aula anterior, sem alterações, pois eu há havia utilizado CSS nos arquivos.<br></details>
 
 
 <details>
