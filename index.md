@@ -169,6 +169,8 @@
 
 <strong><a href="https://yudi.github.io/desenvolvimento-web/Trabalho%20final/index.html">Clique aqui para visualizar o trabalho final</a></strong>
 
+<p>Este trabalho foi desenvolvido em conjunto com <a href="https://github.com/cadusantana">Carlos Santana</a>.</p>
+
 <p>Criar um site de compras que contém:</p>
 <ol>
 <li>Página principal com apresentação de produtos;</li>

@@ -152,6 +152,8 @@ Esta disciplina foi ministrada por **[Wilson Júnior](https://github.com/wilsonj
 
 **[Clique aqui para visualizar o trabalho final](https://yudi.github.io/desenvolvimento-web/Trabalho%20final/index.html)**
 
+Este trabalho foi desenvolvido em conjunto com [Carlos Santana](https://github.com/cadusantana).
+
 Criar um site de compras que contém:
 1. Página principal com apresentação de produtos;
 2. Página com detalhes da compra e os dados do usuário;
