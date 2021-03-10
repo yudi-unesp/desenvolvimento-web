@@ -25,7 +25,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>Exercício proposto:</strong><br>
 
 <ul>
-<li><a href="https://yudi.github.io/desenvolvimento-web/Aula%202/Exercício%201/index.html">Aplicar os conhecimentos de CSS aprendidos na aula nos projetos da aula anterior</a>.</li>
+<li>Aplicar os conhecimentos de CSS aprendidos na aula nos projetos da aula anterior.</li>
 </ul>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Entreguei os mesmos trabalho da aula anterior, sem alterações, pois eu há havia utilizado CSS nos arquivos.<br></details>
