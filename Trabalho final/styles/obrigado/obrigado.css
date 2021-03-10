@@ -1,0 +1,48 @@
+.button-next {
+    background-color: #0077ed;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    min-width: 28px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    padding: 8px 16px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.button-next:hover {
+    background-color: #0071E3;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: main;
+    width: 900px;
+}
+#box {
+    -webkit-animation: appear 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: appear 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#purchase-info {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aula 5 - Exercício 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="title_container">
+        <div class="title">
+            <h1>Crie seu perfil</h1>
+        </div>
+    </div>
+    <form action="" method="" >
+        <div class="boxes">
+            <div class="box2">
+                <h2>Conta</h2>
+                <input class="textbox" type="email" name="email" placeholder="E-mail">
+                <input class="textbox" type="password" name="password" placeholder="Senha">
+            </div>
+            <div class="box2">
+                <h2>Informações pessoais</h2>
+                <input class="textbox" type="text" name="nome" placeholder="Nome" minlength="3" maxlength="30" pattern="[a-Z]">
+                <input class="textbox" type="text" name="sobrenome" placeholder="Sobrenome" minlength="1" maxlength="30" pattern="[a-Z]">
+            </div>
+            <div class="box2">
+                <input class="textbox" type="text" name="idade" placeholder="Data de nascimento" minlength="10" maxlength="10" >
+                <input class="textbox" type="text" list="generos" autocomplete="on" placeholder="Gênero">
+            </div>
+            <div class="box2">
+                <h2>Localização</h2>
+                <select class="textbox" type="text" list="paises" autocomplete="on" placeholder="País">
+                    <option value="Brasil">Brasil</option>
+                </select>
+                <select class="textbox" id="smalltextbox" type="text" list="estados" autocomplete="on" placeholder="UF" minlength="2" maxlength="2">
+                    <option> Estado </option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                </select>
+                <input class="textbox" type="text" placeholder="Cidade" minlength="2">
+            </div>
+            <div class="box2">
+                <h2>Biografia</h2>
+                <textarea name="bio" minlength="3" maxlength="300"  style="margin: 2px; width: 490px; height: 85px;" spellcheck="true" placeholder="Conte-nos mais sobre você"></textarea>
+            </div>
+            <button type="button" class="button">Continuar</button>
+        </div>
+    </form>
+</div>
+<datalist id="generos">
+    <option value="Não informar"/>
+    <option value="Feminino"/>
+    <option value="Masculino"/>
+    <option value="Outro"/>
+</datalist>
+</body>
+</html>

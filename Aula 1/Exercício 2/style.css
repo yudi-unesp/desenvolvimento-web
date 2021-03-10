@@ -1,0 +1,52 @@
+.body, body * {
+  font-family: Helvetica, Arial, "sans-serif" !important;
+}
+
+#container {
+	margin: auto;
+    width: 50%;
+}
+
+#logo {
+	float:left;
+	height: 40px;
+	image-rendering: auto;
+	margin-right: 10px;
+}
+
+#logo-container {
+	margin: auto;
+	display: block;
+}
+
+#title {
+	padding-top: 7px;
+	font-weight: 200;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+
+.preco:before {
+    content: "R$ ";
+}
+
+th, td {
+	border-bottom: 1px solid #DDD;
+	padding: 8px;
+}
+
+tr:hover {
+	background-color:#F6F6F6;
+}
+
+.content {
+	margin: auto;
+	width: 550px;
+}

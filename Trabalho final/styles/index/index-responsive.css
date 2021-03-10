@@ -1,0 +1,79 @@
+@media only screen and (max-width: 920px) {
+    .top-text-wrapper p {
+        margin-bottom: 50px;
+    }
+    .bottom-description {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 10px 0 25px 0;
+    }
+    #ines-logo {
+        grid-row: 1;
+        display: block;
+    }
+    #ines-pic {
+        grid-row: 1;
+        display: block;
+    }
+    .bottom-text1 {
+        font-size: 20px;
+        grid-column: 2;
+        grid-row: 2;
+        margin: auto;
+        padding: 0 15px 0 15px;
+        max-width: 600px;
+    }
+    .bottom-text2 {
+        font-size: 17px;
+        grid-column: 2;
+        grid-row: 2;
+        margin: auto;
+        padding: 0 15px 0 15px;
+        max-width: 600px;
+    }
+    .top-text-wrapper {
+        max-width: 600px;
+        margin: auto;
+        padding: 10px 30px 0 30px;
+    }
+    .splide__arrow {
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 921px) {
+    .top-wrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(253px, 573px) 1fr minmax(253px, 573px) 1fr minmax(253px, 573px) 1fr;
+    }
+    .bottom-img-wrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(253px, 573px) 1fr minmax(253px, 573px) 1fr minmax(253px, 573px) 1fr;
+    }
+    .top-text-wrapper {
+        margin: 10px 25px 0px 25px;
+    }
+    .top-text-wrapper p {
+        margin-bottom: 10px;
+    }
+    .bottom-text1 {
+        margin-right: 20px;
+    }
+    .bottom-text2 {
+        margin-right: 20px;
+    }
+    .bottom-description {
+        grid-template-columns: 1fr minmax(300px, 440px) 20px minmax(300px, 440px) 1fr;
+        margin: 10px 0 25px 0;
+    }
+    .bottom-text1 {
+        font-size: 24px;
+        grid-column: 4;
+    }
+    .bottom-text2 {
+        font-size: 18px;
+        grid-column: 4;
+    }
+    .collab {
+        margin: 20px;
+    }
+}

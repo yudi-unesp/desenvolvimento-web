@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Futura</title>
+    <meta name="author" content="Carlos e Renan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Futura">
+    <meta property="og:description" content="Roupas inovadoras, projetadas para melhorar a sua vida todos os dias, durante todo o ano.">
+    <meta property="og:image" content="https://yudi.github.io/grupo-web/assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/Yudi/Fonts@master/Helvetica%20Neue/HelveticaNeue.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/Yudi/Fonts@master/Helvetica%20Neue/HelveticaNeue-Medium.woff2" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-responsive.css">
+    <link rel="stylesheet" href="styles/compras/compras.css">
+    <link rel="stylesheet" href="styles/compras/compras-responsive.css">
+    <link rel="prefetch" href="assets/images/icons/search.svg">
+    <link rel="prefetch" href="assets/images/icons/cancel.svg">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav_content">
+                <button id="menu_button" onclick="menu_toggle(0)">
+                    <div class="menu_button_icon"></div>
+                </button>
+                <a href="index.html"><img src="assets/images/logo.svg" id="logo" alt="Logo"></a>
+                <a href="sacola.html">
+                    <svg style="width: 30px;height: 30px;" version="1.1" id="bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;"
+                      xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                            }
+
+                            .st1 {
+                                font-family: 'Helvetica';
+                                font-weight: 400;
+                            }
+
+                            .st2 {
+                                font-size: 17px;
+                            }
+                        </style>
+                        <g>
+                            <rect y="0" class="st0" width="48" height="48" />
+                            <path d="M36,12h-4c0-4.4-3.6-8-8-8s-8,3.6-8,8h-4c-2.2,0-4,1.8-4,4v24c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V16
+                  C40,13.8,38.2,12,36,12z M24,8c2.2,0,4,1.8,4,4h-8C20,9.8,21.8,8,24,8z M36,40H12V16h4v4c0,1.1,0.9,2,2,2s2-0.9,2-2v-4h8v4
+                  c0,1.1,0.9,2,2,2s2-0.9,2-2v-4h4V40z" />
+                        </g>
+                        <rect x="12" y="18.5" class="st0" width="24" height="21.5" />
+                        <text xmlns="http://www.w3.org/2000/svg" class="st1 st2" style="text-align: center;" dominant-baseline="middle" text-anchor="middle" x="50%" transform="matrix(1 0 0 1 0 32.3)" id="bag-number">--</text>
+                    </svg>
+                </a>
+                <div id="search-wrapper">
+                    <a class="clear-search-default" style="display: none;" id="clear-search"></a>
+                    <form action="" method="get">
+                        <input id="search-box" class="search-box search-box-inactive" type="text" placeholder="Encontre o seu produto" autocorrect="off" autocapitalize="none" autocomplete="off" spellcheck="false" onkeyup="checkSearch(0)" />
+                        <button class="search-icon-default search-icon" id="search-icon-submit" type="submit" style="display: none;"></button>
+                    </form>
+                    <button class="search-icon-default search-icon" id="search-icon"></button>
+                    <ul class="menu-wrapper">
+                        <li class="menu_link">
+                            <div class="search-wrapper">
+                                <form action="" method="get"><input id="search-box-mobile" class="search-box-mobile" type="text" placeholder="Encontre o seu produto" autocorrect="off" autocapitalize="none" autocomplete="off" spellcheck="false"
+                                      onkeyup="checkSearch(1)" />
+                                    <button class="search-icon-mobile search-icon-default" id="search-icon-mobile" disabled></button>
+                                </form>
+                                <a class="clear-search-default" id="clear-search-mobile"></a>
+                            </div>
+                        </li>
+                        <li class="menu_link"><a href="compras.html">Women</a></li>
+                        <li class="menu_link"><a href="compras.html">Men</a></li>
+                        <li class="menu_link"><a href="compras.html">Kids</a></li>
+                        <li class="menu_link"><a href="compras.html">Baby</a></li>
+                        <li class="menu_link deal"><a href="compras.html">Deals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="content-wrapper">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!--Cor temp-->
+                    <a class="filter-title">Filtros</a>
+                    <div class="categoria">
+                        <a onclick="typeShow(0)">Categorias<span class="expand-icon" id="expand-type"></span></a>
+                        <ul class="cate-show type-display-none" id="type-list">
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Parca" onclick="refreshCheckboxes()">Parca</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Jaqueta" onclick="refreshCheckboxes()">Jaqueta</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Camiseta" onclick="refreshCheckboxes()">Camiseta</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Calça" onclick="refreshCheckboxes()">Calça</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Jeans" onclick="refreshCheckboxes()">Jeans</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Moletom" onclick="refreshCheckboxes()">Moletom</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Acessório" onclick="refreshCheckboxes()">Acessório</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Infantil" onclick="refreshCheckboxes()">Infantil</label></li>
+                        </ul>
+                    </div>
+                    <div class="categoria">
+                        <a onclick="typeShow(1)">Gênero<span class="expand-icon" id="expand-gender"></span></a>
+                        <ul class="cate-show type-display-none" id="gender-list">
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Masculino" onclick="refreshCheckboxes()">Masculino</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Feminino" onclick="refreshCheckboxes()">Feminino</label></li>
+                            <li><label><input type="checkbox" name="categoria" class="filter_checkbox" value="Unissex" onclick="refreshCheckboxes()">Unissex</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Produtos-->
+                <div class="campoProdutos">
+                    <h1 style="font-size: 2em; margin-left: 10px; margin-bottom: 0;">Em destaque</h1>
+                    <ol id="listProdutos" class="listProdutos pre-animation">
+                    </ol>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="about">
+                    <div class="footer-title">Sobre a Futura</div>
+                    <ul>
+                        <li class="footer-text footer-link"><a href="">Quem somos</a></li>
+                        <li class="footer-text footer-link"><a href="">Nossas lojas</a></li>
+                        <li class="footer-text footer-link"><a href="">Notícias</a></li>
+                        <li class="footer-text footer-link"><a href="">Meio ambiente</a></li>
+                        <li class="footer-text footer-link"><a href="">Responsabilidade social</a></li>
+                        <li class="footer-text footer-link"><a href="" style="margin-right: 20px;">Informações&nbsp;corporativas</a></li>
+                        <li class="footer-text footer-link"><a href="">Embaixadores globais</a></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <div class="footer-title">Suporte</div>
+                    <ul>
+                        <li class="footer-text footer-link"><a href="">Perguntas frequentes</a></li>
+                        <li class="footer-text footer-link"><a href="">Entregas</a></li>
+                        <li class="footer-text footer-link"><a href="">Trocas</a></li>
+                        <li class="footer-text footer-link"><a href="">Devoluções</a></li>
+                        <li class="footer-text footer-link"><a href="">Status do pedido</a></li>
+                        <li class="footer-text footer-link"><a href="">Lista de e-mails</a></li>
+                        <li class="footer-text footer-link"><a href="">Entrar em contato</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div class="footer-title">Mídias sociais</div>
+                    <div class="social-icons-wrapper"> <a class="facebook social-icon" title="Facebook" alt="facebook" href="https://facebook.com/"></a> <a class="instagram social-icon" title="Instagram" alt="instagram"
+                          href="https://instagram.com/"></a>
+                        <div style="white-space: nowrap; display: inline-block;"><a class="twitter social-icon" title="Twitter" alt="twitter" href="https://twitter.com/"></a>&nbsp;<a class="youtube social-icon" title="Youtube" alt="youtube"
+                              href="https://youtube.com/"></a></div>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="footer-title">Membro digital Futura</div>
+                    <div class="email-content-wrapper">
+                        <div class="footer-text" id="email-text" style="text-align: justify;">Inscreva-se para receber todas as novidades em primeira mão, além de um cupom especial de boas-vindas!<a style="font-size: 10px;"><sup>&nbsp;1</sup></a>
+                        </div>
+                        <form action="" method="get">
+                            <input id="email-address" type="email" placeholder="Digite seu e-mail" value="" required>
+                            <button id="submit" type="submit" name="email" value="Submit">Inscrever-se</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <legal>
+                <div class="informacao-extra footnote">
+                    <div style="display: inline-block; text-align: left;">1. Para fins desta ação, apenas poderá ser resgatado 1 (um) cupom de desconto por CPF durante a vigência da mesma. Consulte <a class="footer-link"
+                          style="display: inline; color: #86868b;">o regulamento</a>.</div>
+                </div>
+                <div class="dados-legais footnote legal-bottom">
+                    <div style="display: inline-block; text-align: left;">Futura Brasil Ltda. CNPJ: 91.542.653/0001-58. Rua Leopoldo Couto de Magalhães Jr., 700, 19º andar, Itaim Bibi, São Paulo, SP. CEP: 04542-000. Entre em contato conosco:
+                        0800-725-7246.</div>
+                </div>
+                <a class="privacy footer-link" href="">Política de privacidade</a>
+                <div class="copyright">This website is not affiliated with Uniqlo. Pictures&nbsp;©&nbsp;UNIQLO&nbsp;CO.&nbsp;LTD.</div>
+                <a class="terms footer-link" href="">Termos e condições</a>
+            </legal>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="assets/products.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/compras.js"></script>
+</body>
+
+</html>

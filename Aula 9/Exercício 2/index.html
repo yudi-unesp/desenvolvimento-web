@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aula 9 - Exercício 2</title>
+</head>
+<body>
+<script>
+let jogador = {
+    1: "",
+    2: "",
+}
+
+for (i = 1; i <= 2; i++) {
+    jogador[i] = prompt("Qual é o seu nome, jogador " + i + "?");
+}
+
+let maxpontos = prompt("Qual vai ser o máximo de pontos?");
+
+function randomrange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let rodadas = 0,
+    pontos1 = 0,
+    pontos2 = 0,
+    temp1, temp2, temp3, temp4;
+
+do {
+    rodadas++
+    temp1 = randomrange(1, 6);
+    temp2 = randomrange(1, 6);
+    temp3 = randomrange(1, 6);
+    temp4 = randomrange(1, 6);
+    pontos1 += temp1 + temp2;
+    pontos2 += temp3 + temp4;
+    alert("Rodada " + rodadas + "\n\nO jogador " +  jogador[1] + " rolou " + temp1 + " e " + temp2 + ", conseguindo " + (temp1 + temp2) + " pontos nesta rodada\nO jogador " + jogador[2] + " rolou " + temp3 + " e " + temp4 + ", conseguindo " + (temp3 + temp4) + " pontos nesta rodada\n\nPlacar:\nJogador " + jogador[1] + " - " + pontos1 + " pontos\nJogador " + jogador[2] + " - " + pontos2 + " pontos");
+} while (pontos1 < maxpontos && pontos2 < maxpontos)
+
+if (pontos1 > pontos2) {
+    alert("O jogador " + jogador[1] + " venceu!");
+
+} else if (pontos1 < pontos2) {
+    alert("O jogador " + jogador[2] + " venceu!");
+
+} else {
+    alert("Empate!");
+}
+</script>
+</body>
+</html>

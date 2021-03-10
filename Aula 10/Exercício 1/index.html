@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aula 10 - Exercício 1</title>
+</head>
+<body>
+<script>
+let body = document.querySelector("body");
+body.style = "background-image: url(\"assets/images/background.png\"); user-select: none;";
+
+let main = document.createElement("div");
+main.id = "main";
+main.style = "display: grid; grid-template-columns: 1fr 2fr;";
+
+styletag = document.createElement('style');
+styletag.type = 'text/css';
+styletag.appendChild(document.createTextNode(".disc {width: 50px;cursor: pointer;transition-duration: 0.3s;}.disc:hover {opacity: 0.5;transition-duration: 0.3s;}"));
+main.appendChild(styletag);
+
+let audio = document.createElement("audio");
+audio.id = "player";
+audio.autoplay = true;
+audio.muted = true;
+
+let source = document.createElement("source");
+source.src = "assets/records/silence.ogg";
+source.type = "audio/ogg";
+source.id = "source";
+audio.appendChild(source);
+
+let disc_list = document.createElement("ul");
+disc_list.id = "disc_list";
+const discnames = ["11", "13", "blocks", "cat", "chirp", "far", "mall", "mellohi", "pigstep", "stal", "strad", "wait", "ward"];
+let discHtml = "";
+for (i = 0; i < 13; i++) {
+    discHtml += ("<li><img src=\"assets/discs/" + discnames[i] + ".png\" alt=\"\" class=\"disc\" onclick=\"discmusic('" + discnames[i] + "')\"></li>")
+}
+disc_list.style = "list-style-type: none; margin: 0; padding: 0; grid-column: 1;"
+disc_list.innerHTML = discHtml;
+
+let subgrid = document.createElement("subgrid");
+subgrid.style = "grid-column: 2; display: grid; grid-template-columns: 1fr 1fr;";
+
+let jukebox = document.createElement("img");
+jukebox.id = "jukebox";
+jukebox.src = "assets/images/jukebox.png"
+jukebox.alt = "";
+jukebox.style = "grid-column: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; cursor: pointer;";
+
+let parrot_grid = document.createElement("parrot-grid");
+parrot_grid.idea = "parrot-grid"
+parrot_grid.style = "grid-column: 2;"
+let parrotsHtml = ""
+let parrotcount = 20;
+for (j = 0; j < 4; j++) {
+    for (i = 1; i <= 5; i++) {
+        parrotsHtml += ("<img src=\"assets/parrots/" + i + ".png\" alt=\"\" class=\"parrots\" style=\"display: inline-block;width: 150px;\">")
+    }
+}
+parrot_grid.innerHTML = parrotsHtml;
+
+main.appendChild(audio);
+main.appendChild(disc_list);
+subgrid.appendChild(jukebox);
+subgrid.appendChild(parrot_grid);
+main.appendChild(subgrid);
+body.appendChild(main);
+
+
+let parrot = document.getElementsByClassName("parrots");
+
+jukebox.onclick = function() {
+    if (!(source.src.match("silence.ogg"))) {
+        audio.pause()
+        source.src = "assets/records/silence.ogg";
+        if (!(parrot[0].src.match("1.png"))) {
+            for (j = 0; j < 20; j += 5) {
+                for (i = 0; i < 5; i++) {
+                    parrot[i + j].src = ("assets/parrots/" + (i + 1) + ".png");
+                }
+            }
+        }
+    }
+};
+
+document.body.onclick = function() {
+    if (audio.muted == true) {
+        audio.muted = false;
+    }
+};
+
+function discmusic(name) {
+    if (!(source.src.match(name))) {
+        audio.pause();
+        source.src = "assets/records/" + name + ".ogg";
+        audio.load();
+        audio.play();
+        if (!(parrot[0].src.match("1.gif"))) {
+            for (j = 0; j < 20; j += 5) {
+                for (i = 0; i < 5; i++) {
+                    parrot[i + j].src = ("assets/parrots/" + (i + 1) + ".gif");
+                }
+            }
+        }
+    }
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+main {
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: main;
+    width: 900px;
+}
+.payment-div-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.payment-div-wrapper label {
+    font-size: 16px;
+}
+.payment-input {
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: -.022em;
+    font-size: 17px;
+    width: 90%;
+    height: 1em;
+}
+.inline {
+    display: inline-block;
+}
+.input-wrapper {
+    display: block;
+    margin: 0;
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.medium-block {
+    width: 400px;
+}
+.medium-block input {
+    width: 100%;
+}
+.phone-block {
+    margin-left: 6px;
+}
+.state-block {
+    margin-left: 18px;
+}
+.button-pay {
+    background-color: #0077ed;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    min-width: 28px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 40px auto;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.button-pay:hover {
+    background-color: #0071E3;
+}
+#button-pay-bottom {
+    float: right;
+    width: 50%;
+    min-width: 300px;
+    max-width: 337px;
+}
+.summary {
+    margin-top: 30px;
+    border-top: 1px solid #d2d2d7;
+}
+.summary-content-wrapper {
+    margin-left: 225px;
+}
+.summary-text {
+    flex-basis: 100%;
+    transition: opacity 0.2s cubic-bezier(0, 1.2, 1, .92);
+}
+.summary-value {
+    display: flex;
+    margin-bottom: 5px;
+}
+.summary-shipping {
+    display: flex;
+}
+.summary-total {
+    display: flex;
+    margin-top: 15px;
+    border-top: 1px solid #d2d2d7;
+    font-size: 24px;
+    font-weight: 500;
+}
+.summary-total-text {
+    flex-basis: 100%;
+}
+.medium-block {
+    max-width: 115px;
+}
+.medium-block input {
+    width: 100%;
+}
+.network-default {
+    background-image: transparent;
+    width: 56px;
+    height: 33px;
+    display: inline-block;
+    position: relative;
+    left: 55px;
+    top: 39px;
+    background-size: 112px 68px;
+}
+.network-show {
+    background-image: url(../../assets/images/pagamento/networks.webp);
+}
+.network-unknown {
+    background-position: 0 0;
+}
+.network-visa {
+    background-position: -56px 0;
+}
+.network-mastercard {
+    background-position: 0 -33px;
+}
+.network-amex {
+    background-position: -56px -33px;
+}
+.cvv {
+    margin-left: 6px;
+    display: inline-block;
+}

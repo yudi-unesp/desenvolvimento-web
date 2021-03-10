@@ -1,0 +1,23 @@
+@media only screen and (max-width: 920px) {
+    main {
+        width: 87.5%;
+    }
+    #button-pay-bottom {
+        float: none;
+    }
+}
+@media only screen and (max-width: 622px) {
+    .inline {
+        display: block;
+    }
+    .medium-block {
+        margin-left: 0;
+        max-width: 120px;
+    }
+    .phone-block {
+        margin-left: 0;
+    }
+    .state-block {
+        margin-left: 0;
+    }
+}

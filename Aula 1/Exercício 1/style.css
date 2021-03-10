@@ -1,0 +1,61 @@
+.body, body * {
+  font-family: Helvetica, Arial, "sans-serif" !important;
+}
+
+#container {
+  margin: auto;
+  width: 50%;
+}
+
+#pfp {
+  width: 170px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  border-radius: 25px;
+  height: 168px;
+}
+
+#pfp img {
+  margin: 0 0 0 -65px;
+  width: 300px;
+}
+
+#listanome {
+  display: block;
+  padding-top: 0.5px;
+  list-style-type: none;
+  line-height: 0.5;
+}
+
+#nome {
+  font-weight: medium;
+}
+
+#social {
+  color: #4A4A4A;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a#social:hover {
+  text-decoration: underline;
+}
+
+#qualidades {
+  position: relative;
+  left: 6px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#qualidades > li:before {
+  content: "- ";
+}
+
+.descricao {
+  display: block;
+  text-align: justify;
+  color: #4A4A4A;
+}

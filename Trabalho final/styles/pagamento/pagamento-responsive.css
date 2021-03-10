@@ -1,0 +1,39 @@
+@media only screen and (max-width: 920px) {
+    main {
+        width: 87.5%;
+    }
+    #button-pay-bottom {
+        float: none;
+    }
+}
+@media only screen and (max-width: 622px) {
+    .inline {
+        display: block;
+    }
+    .medium-block {
+        margin-left: 0;
+        max-width: 300px;
+    }
+    .cc {
+        margin-left: 0;
+        max-width: 300px;
+    }
+    .phone-block {
+        margin-left: 0;
+    }
+    .state-block {
+        margin-left: 0;
+    }
+    .payment-block {
+      max-width: 219px;
+    }
+    #city {
+      width: 219px;
+    }
+    #ID-payment {
+      width: 154px;
+    }
+    #address-number {
+      width: 114px;
+    }
+}

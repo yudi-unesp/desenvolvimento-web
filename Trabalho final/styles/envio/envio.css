@@ -1,0 +1,77 @@
+main {
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: main;
+    width: 900px;
+}
+.button-pay {
+    background-color: #0077ed;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    min-width: 28px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 40px auto;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.button-pay:hover {
+    background-color: #0071E3;
+}
+#button-pay-bottom {
+    float: right;
+    width: 50%;
+    min-width: 300px;
+    max-width: 337px;
+}
+.shipping-input {
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: -.022em;
+    font-size: 17px;
+    width: 90%;
+    height: 1em;
+}
+.inline {
+    display: inline-block;
+}
+.input-wrapper {
+    display: block;
+    margin: 0;
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.medium-block {
+    max-width: 115px;
+}
+.medium-block input {
+    width: 100%;
+}
+.phone-block {
+    margin-left: 6px;
+}
+.state-block {
+    margin-left: 18px;
+}
+.shipping-div-wrapper {
+    margin-bottom: 20px;
+}
+.shipping-div-wrapper label {
+  font-size: 16px;
+}

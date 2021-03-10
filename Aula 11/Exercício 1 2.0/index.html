@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aula 11 - Exercício 1 2.0</title>
+</head>
+<body>
+  <canvas id="canvas" width="300" height="300"></canvas>
+  <style>
+    #canvas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</body>
+<script>
+  let quadrado = [{
+    x: 150,
+    y: 150
+  }]
+
+  const canvas = document.getElementById("canvas");
+  const canvas2d = canvas.getContext("2d");
+
+  document.addEventListener("keydown", direcaoQuadrado);
+
+  main();
+
+  function main() {
+    if (foraBorda()) quadrado = [{
+      x: 150,
+      y: 150
+    }];
+    setTimeout(function onTick() {
+      limparCanvas();
+      desenharQuadrado();
+      main();
+    }, 100)
+  }
+
+  function foraBorda() {
+    if (quadrado[0].y > canvas.height - 10 || quadrado[0].x > canvas.width - 10 || quadrado[0].y < 0 || quadrado[0].x < 0)
+      return true;
+  }
+
+  function limparCanvas() {
+    // Fill canvas
+    canvas2d.fillStyle = "white";
+    canvas2d.fillRect(0, 0, canvas.width, canvas.height);
+    // Borda canvas
+    canvas2d.strokestyle = "black";
+    canvas2d.strokeRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function desenharQuadrado() {
+    // Fill quadrado
+    canvas2d.fillStyle = "red";
+    canvas2d.fillRect(quadrado[0].x, quadrado[0].y, 10, 10);
+    // Borda quadrado
+    canvas2d.strokestyle = "black";
+    canvas2d.strokeRect(quadrado[0].x, quadrado[0].y, 10, 10);
+  }
+
+  function direcaoQuadrado(event) {
+    const teclaPressionada = event.keyCode;
+    const ESQUERDA = 37,
+      DIREITA = 39,
+      CIMA = 38,
+      BAIXO = 40,
+      W = 87,
+      A = 65,
+      S = 83,
+      D = 68;
+    if (teclaPressionada === CIMA || teclaPressionada === W) {
+      moverQuadrado(0, -10);
+    } else if (teclaPressionada === BAIXO || teclaPressionada === S) {
+      moverQuadrado(0, 10);
+    } else if (teclaPressionada === ESQUERDA || teclaPressionada === A) {
+      moverQuadrado(-10, 0);
+    } else if (teclaPressionada === DIREITA || teclaPressionada === D) {
+      moverQuadrado(10, 0);
+    }
+  }
+
+  function moverQuadrado(posx, posy) {
+    const novapos = {
+      x: quadrado[0].x + posx,
+      y: quadrado[0].y + posy
+    };
+    quadrado.unshift(novapos);
+    quadrado.pop();
+  }
+</script>
+</html>

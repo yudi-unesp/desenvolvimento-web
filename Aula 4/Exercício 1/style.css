@@ -1,0 +1,44 @@
+.body, body * {
+    font-family: Helvetica, Arial, "sans-serif";
+}
+.header {
+    font-size: 17px;
+    overflow: hidden;
+    background-color: #1d1d1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_content {
+    padding: 12px 15px;
+}
+.menu_button {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    float: left;
+    user-select: none;
+}
+.material-icons {
+    color: rgba(255, 255, 255, 1);
+}
+.header-dir {
+    margin-top: -22px;
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+#sair {
+    float: left;
+    color: #FFFFFF;
+    padding-top: 4px;
+    padding-right: 4px
+}
+.logo {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    user-select: none;
+    height: 20px;
+}

@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1234px) {
+    .produto {
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width: 978px) {
+    .produto {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .produto {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+    .sidebar {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+    }
+    .sidebar a {
+        padding-left: 15px;
+    }
+    .categoria {
+        margin: 10px 15px 5px 15px;
+        margin: 15px 15px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .campoProdutos {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .cate-show label {
+        width: 100%;
+        display: inline-block;
+    }
+    .type-display-none {
+        display: none;
+    }
+    .expand-icon {
+        display: inline-block;
+    }
+}

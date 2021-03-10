@@ -1,0 +1,18 @@
+.square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 40px;
+  background-color: lightblue;
+  border: 2px solid black;
+  transition: 1s ease-in;
+}
+.square:hover {
+  top: 20px;
+  left: 20px;
+  background-color: red;
+  border: 0;
+  transition: 0.3s ease-out;
+}

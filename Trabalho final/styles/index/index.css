@@ -1,0 +1,137 @@
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto 20px auto 20px auto 0px auto;
+    max-width: 1920px;
+    width: 100vw;
+}
+.top {
+    max-width: 100%;
+    height: auto;
+    grid-area: main;
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.3s;
+}
+.top:hover {
+    filter: brightness(90%);
+    transition-duration: 0.3s;
+}
+.top-wrapper {
+    max-width: 1920px;
+    width: 100vw;
+    grid-row: 3;
+}
+.banner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1719px) 1fr;
+    grid-template-rows: auto 10px auto;
+    grid-row: 5;
+    max-width: 1920px;
+    width: 100vw;
+}
+.banner {
+    cursor: pointer;
+    max-width: 100%;
+}
+.bottom {
+    max-width: 100%;
+    height: auto;
+    grid-area: main;
+    grid-row: 2;
+}
+.bottom-wrapper {
+    grid-row: 7;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    /*! grid-template-columns: auto; */
+    background-color: #F0F0F0;
+    padding: 20px 0 40px 0;
+}
+.bottom-img-wrapper {
+    grid-row: 7;
+    max-width: 1920px;
+    width: 100vw;
+}
+.collab {
+    width: auto;
+    margin: 20px;
+    background-repeat: no-repeat;
+}
+.bottom-description {
+    display: grid;
+    align-items: center;
+}
+.bottom {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.bottom:hover {
+    filter: brightness(110%);
+    transition-duration: 0.3s;
+}
+.slider {
+    grid-row: 1;
+    max-width: 1920px;
+    width: 100vw;
+}
+.splide__slide img {
+    max-width: 1920px;
+    width: 100vw;
+    height: auto;
+}
+.bottom-button {
+    margin: auto;
+    display: block;
+    border: 2px solid #555;
+    color: #555;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: rgb(0, 0, 0, 0);
+    text-decoration: none;
+}
+.bottom-button:hover {
+    border-color: #000;
+    color: #000;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+.bottom-text1 {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 35px;
+}
+.bottom-text2 {
+    font-weight: 300;
+    text-align: justify;
+    line-height: normal;
+}
+.top-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.top-text-wrapper {
+    text-align: left;
+    font-size: 17px;
+}
+.top-text-wrapper p {
+    margin-top: 10px;
+}
+.top-element-wrapper {
+    cursor: pointer;
+    user-select: none;
+}
+.top-element-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+#ines-logo {
+    height: 150px;
+}
+#ines-pic {
+    height: 200px;
+}
