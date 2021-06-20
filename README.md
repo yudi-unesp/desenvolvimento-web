@@ -28,7 +28,7 @@ Esta disciplina foi ministrada por **[Wilson Júnior](https://github.com/wilsonj
 
 * Aplicar os conhecimentos de CSS aprendidos na aula nos projetos da aula anterior.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Entreguei os mesmos trabalhos da aula anterior, sem alterações, pois eu há havia utilizado CSS nos arquivos.  
+&nbsp;&nbsp;&nbsp;&nbsp;Foram entregues os mesmos trabalhos da aula anterior, sem alterações, pois já havia CSS nos arquivos.  
 </details>
 
 
