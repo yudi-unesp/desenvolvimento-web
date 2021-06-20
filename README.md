@@ -120,7 +120,7 @@ Esta disciplina foi ministrada por **[Wilson Júnior](https://github.com/wilsonj
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Exercícios propostos:**
 
-* [Criar, dinâmicamente (com Javascript), no lado esquerdo do site, uma lista com itens, também criados dinamicamente. Devem haver objetos criados dinamicamente na parte direita do site](https://yudi.github.io/desenvolvimento-web/Aula%2010/Exercício%201/index.html);
+* [Criar, dinâmicamente (com Javascript), no lado esquerdo do site, uma lista com itens, também criados dinamicamente. Deve haver objetos criados dinamicamente na parte direita do site](https://yudi.github.io/desenvolvimento-web/Aula%2010/Exercício%201/index.html);
 
 &nbsp;&nbsp;&nbsp;&nbsp;Screenshot:  
 
